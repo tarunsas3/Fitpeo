@@ -35,21 +35,17 @@ export const CustomersCard = () => {
           minPointSize: 10,
           innerSize: "20%",
           zMin: 0,
-          name: "countries",
           borderRadius: 5,
           data: [
             {
-              name: "Spain",
               y: 505992,
               z: 92,
             },
             {
-              name: "France",
               y: 551695,
               z: 119,
             },
             {
-              name: "Germany",
               y: 357114,
               z: 235,
             },
