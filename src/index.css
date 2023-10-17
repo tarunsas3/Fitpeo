@@ -1,0 +1,337 @@
+* {
+  font-family: "cascadia code";
+  max-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+}
+.App ::-webkit-scrollbar {
+  width: 0;
+}
+.App ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.App ::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.App .sideBar {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  background: purple;
+  color: white;
+}
+.App .sideBar .wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.App .sideBar .wrapper .sideBarHeader {
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+.App .sideBar .wrapper .sideBarHeader h1 {
+  font-size: 25px;
+}
+.App .sideBar .wrapper .navBarSection {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App .sideBar .wrapper .navBarSection :hover {
+  background: blue;
+  border-radius: 0.5rem;
+}
+.App .sideBar .wrapper .navBarSection :hover .iconDisplay {
+  display: none;
+}
+.App .sideBar .wrapper .navBarSection .navItems {
+  padding: 0.5rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App .sideBar .wrapper .navBarSection .navItems .navItemsLeft {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.App .sideBar .userInfoSection {
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  background: blue;
+  border-radius: 1rem;
+  margin-bottom: 2.25rem;
+}
+.App .sideBar .userInfoSection img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 1rem 0.5rem;
+}
+.App .sideBar .userInfoSection .userDetails {
+  margin-right: 2rem;
+}
+.App .sideBar .userInfoSection .userDetails p {
+  font-size: 12px;
+}
+.App .sideBar .userInfoSection .userIcon {
+  padding-right: 0.5rem;
+}
+.App .displaySection {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  background: #dde1e7;
+  overflow-y: scroll;
+}
+.App .displaySection .displaySectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 1.25rem;
+}
+.App .displaySection .displaySectionHeader h3 {
+  font-size: 20px;
+}
+.App .displaySection .displaySectionHeader .headerSearch {
+  display: flex;
+  align-items: center;
+}
+.App .displaySection .displaySectionHeader .headerSearch .searchIcon {
+  margin-right: -1.2rem;
+  z-index: 1;
+}
+.App .displaySection .displaySectionHeader .headerSearch input {
+  height: 25px;
+  padding-left: 1.4rem;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+}
+.App .displaySection .displaySectionTileInfoCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 0rem;
+}
+.App .displaySection .displaySectionTileInfoCards .tile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background: #fff;
+}
+.App .displaySection .displaySectionTileInfoCards .tile span {
+  padding: 1rem;
+  background: lightblue;
+  border-radius: 50%;
+}
+.App .displaySection .displaySectionTileInfoCards .tile .tileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.App .displaySection .displaySectionTileInfoCards .tile .tileInfo h6 {
+  margin-left: 0.2rem;
+  font-size: 12px;
+}
+.App .displaySection .displaySectionTileInfoCards .tile .tileInfo .percentage {
+  display: flex;
+  align-items: center;
+}
+.App .displaySection .displaySectionTileInfoCards .tile .tileInfo .percentage .arrowIcons {
+  padding: 0rem;
+  background: #fff;
+  margin-left: -0.3rem;
+}
+.App .displaySection .displaySectionTileInfoCards .tile .tileInfo .percentage .percentageDisplayText {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.App .displaySection .displaySectionTileInfoCards .tile .tileInfo .percentage .percentageDisplayText span {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0rem;
+}
+.App .displaySection .displaySectionLongInfoCards {
+  display: flex;
+  justify-content: space-between;
+}
+.App .displaySection .displaySectionLongInfoCards .cutomersCard {
+  width: 27%;
+  margin-right: 1.7rem;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.App .displaySection .displaySectionLongInfoCards .cutomersCard .overviewCardHeader {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.App .displaySection .displaySectionLongInfoCards .cutomersCard .overviewCardHeader .left span {
+  font-size: 12px;
+  font-weight: bold;
+}
+.App .displaySection .displaySectionLongInfoCards .cutomersCard #container {
+  border-radius: 2rem;
+  background: #fff;
+}
+.App .displaySection .displaySectionLongInfoCards .cutomersCard .customersText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .displaySection .displaySectionLongInfoCards .cutomersCard .customersText span {
+  font-size: 12px;
+}
+.App .displaySection .displaySectionLongInfoCards .overviewCard {
+  background: #fff;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  width: 60%;
+}
+.App .displaySection .displaySectionLongInfoCards .overviewCard .labelText {
+  display: flex;
+  align-items: center;
+  margin-left: 1.15rem;
+  gap: 2.15rem;
+}
+.App .displaySection .displaySectionLongInfoCards .overviewCard .barItem :hover {
+  fill: blue;
+}
+.App .displaySection .displaySectionLongInfoCards .overviewCard .overviewCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.App .displaySection .displaySectionLongInfoCards .overviewCard .overviewCardHeader .left span {
+  font-size: 12px;
+  font-weight: bold;
+}
+.App .displaySection .displaySectionLongInfoCards .overviewCard .overviewCardHeader select {
+  border: none;
+  background: #dde1e7;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+.App .displaySection .displaySectionProductInfoCards {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeader {
+  margin: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeader .productHeaderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeader .productHeaderWrapper .productSearch {
+  display: flex;
+  align-items: center;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeader .productHeaderWrapper .productSearch input {
+  padding-left: 2rem;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #dde1e7;
+  border-radius: 0.5rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeader .productHeaderWrapper .productSearch span {
+  margin-right: -1.75rem;
+  z-index: 1;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeader .productHeaderWrapper select {
+  background: #dde1e7;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeadings {
+  color: darkgray;
+  font-weight: bolder;
+  margin: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.App .displaySection .displaySectionProductInfoCards .productHeadings .right {
+  display: flex;
+  align-items: center;
+  gap: 4.25rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems {
+  margin: 0rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product {
+  display: flex;
+  align-items: center;
+  gap: 27rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoLeft img {
+  width: 75px;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoLeft .infoWrapper p {
+  color: gray;
+  font-weight: bolder;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoRight {
+  display: flex;
+  margin-left: 0.75rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoRight p {
+  margin-right: 1.75rem;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoRight .price {
+  font-weight: bolder;
+}
+.App .displaySection .displaySectionProductInfoCards .productItems .product .productInfoRight .sales {
+  margin-left: 5rem;
+}
+
+@media (max-width: 1510px) {
+  .App .displaySection .displaySectionProductInfoCards .productItems .product {
+    gap: 24.5rem;
+  }
+  .App .displaySection .displaySectionLongInfoCards .overviewCard .labelText {
+    gap: 2.05rem;
+  }
+}/*# sourceMappingURL=index.css.map */
